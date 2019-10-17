@@ -1,17 +1,15 @@
 import React, {Component} from 'react';
+import Itemlist from './components/Itemlist';
 
 
 class App extends Component{
   render(){
 
-let names =  ['vai bello','rcodue','troppo duci']
+let names =  ['vai trello','rcodue','troppo duci','come paria']
   return (
-    
-  <div >
-      <header >
-       {names.map(name=> <p> Ciao {name} </p>)}
-      </header>
-    </div>
+  <div>
+  <Itemlist items = {names}></Itemlist>
+  </div>
   );
   }
 }
